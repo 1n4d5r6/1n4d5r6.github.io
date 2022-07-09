@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <header>
+        <h1>MC 怪物大全</h1>
+        <nav>
+            <a href="./zombie.html">僵尸</a>
+            <a href="./skeleton.html">骷髅</a>
+            <a href="./creeper.html">爬行者</a>
+            <a href="./EnderDragon.html">末影龙</a>
+            <a href="./Wither.html">凋零</a>
+            <a href="./index.html">首页</a>
+        </nav>
+    </header>
+    <article>
+        <div id="des">
+            <img id="img_z" src="../resources/Wither.webp" style="display:block;">
+            <p>生命值：300</p>
+            <p>攻击力：5(简单)/8(普通)/12(困难)</p>
+        </div>
+        <div id="des2">
+            <p>
+                凋灵（Wither）是一种由玩家建造，会浮在空中且向玩家和生物发射凋灵之首的亡灵敌对生物，同时也是合成信标所需材料下界之星的唯一来源。
+            </p>
+            <div id="summon">
+                <h2>生成</h2>
+                <p>
+                    先将4个灵魂沙或灵魂土摆成T形，然后在顶层的3块灵魂沙或灵魂土上各放一块凋灵骷髅头颅。方块放置的次序可以调换，但最后一个放置的方块必须是凋灵骷髅头颅（可手动放置或由发射器放置）。灵魂沙和灵魂土可以任意混合，凋灵骷髅头颅也可以朝不同的方向摆放，顶层的左右两块灵魂沙或灵魂土下必须是空气（草和花等非固体方块会阻止凋灵生成）。将该结构正置、平置或倒置都可以召唤出凋灵。凋灵总是会在结构底端处生成。当凋灵完全生成时，它会发怒并在其周围产生一次爆炸。
+
+                    与其他攻击型生物类似，凋灵在和平难度下会消失。在和平难度下尝试生成凋灵不会成功，即使结构摆放正确也不会生成凋灵。
+                </p>
+            </div>
+            <div id="actions">
+                <h2>行为</h2>
+                <p>
+                    凋灵在生成后的10秒内，生命值会逐渐提升，体积也会随之增大。在此期间，凋灵不会受到任何伤害，但无法移动和攻击。此后，凋灵会创造一场以它自身为中心，爆炸威力为7的大爆炸，这场爆炸会摧毁附近的方块，对附近的玩家和生物造成至多99（♥
+                    × 49.5）的伤害，其威力稍强于闪电苦力怕和末地水晶。爆炸发生的同时还会产生一种恐怖的声响，玩家在任何维度、任何位置都能听到这个声响。[仅JE]在此之后，凋灵会开始攻击邻近的生物，并且能够受到伤害。
+
+                    凋灵是Minecraft中生命值第二高的生物。窒息效果带来的伤害效率不高，因为凋灵只要受到任意伤害就会在20游戏刻（1秒）后尝试强制摧毁（与方块硬度和游戏难度无关）以自身躯干为中心3×4×3的方块（不包含其尾部下方的方块）[仅Java版]或以自身躯干东南角为中心4×6×4的方块[仅基岩版]。但是，凋灵不能摧毁拼图方块[仅Java版]、末地折跃门方块[仅Java版]、下界传送门方块[仅Java版]、结构空位[仅基岩版]、基岩、强化深板岩、末地传送门方块、末地传送门框架、命令方块、结构方块、屏障以及移动的活塞臂。因此，凋灵在末地折跃门和返回传送门中会受到窒息伤害。与其他亡灵生物类似，凋灵会被瞬间伤害效果治疗，瞬间治疗效果和带有亡灵杀手附魔的武器会对凋灵造成伤害。类似末影龙，凋灵免疫几乎所有的状态效果。
+
+                    凋灵会对其周围的生物以及所有方块发动近战攻击并造成伤害。[仅基岩版]
+
+                    当凋灵杀死生物时，死亡的生物将放置一朵凋零玫瑰到地面上，但是凋灵之首的轰炸与不合适的地表方块使它往往以掉落物的形式出现。
+                </p>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <p>本页面所有资料均来自Minecraft Wiki</p>
+    </footer>
+</body>
+<script>
+
+    window.setInterval(function () {
+        let a = ["../resources/Wither.webp","../resources/Wither2.webp"]
+        let b = Math.random()*10%2;
+        if (b < 1) document.getElementById("img_z").src = String(a[0]);
+        else document.getElementById("img_z").src = String(a[1]);
+    }, 1000);
+
+</script>
+<style>
+    header {
+        width: 100%;
+        height: 15%;
+    }
+
+    header h1 {
+        background-color: black;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        color: white;
+    }
+
+    header nav a {
+        display: inline-block;
+        padding: 0 20px;
+        height: 60px;
+        line-height: 60px;
+        color: white;
+        font-family: "\5FAE\8F6F\96C5\9ED1";
+        font-size: 16px
+    }
+
+    header nav {
+        width: 100%;
+        height: 60px;
+        background: black;
+        margin: 0 auto
+    }
+
+    article {
+        width: 100%;
+        height: 85%;
+    }
+
+    article #des {
+        position: relative;
+        top: 5%;
+        left: 42%;
+        border-bottom: 1em;
+        /* margin: 1; */
+    }
+
+    footer {
+        margin: 0px;
+        padding: 0px;
+        position: block;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        color: white;
+        text-align: center;
+        background-color: black;
+    }
+
+    h2 {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #des2 p {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #des p {
+        color: azure;
+        margin: 0px;
+        border-bottom: 1em;
+    }
+
+    body {
+        background-color: black;
+    }
+</style>
+
+</html>

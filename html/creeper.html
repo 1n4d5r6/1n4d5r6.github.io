@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <header>
+        <h1>MC 怪物大全</h1>
+        <nav>
+            <a href="./zombie.html">僵尸</a>
+            <a href="./skeleton.html">骷髅</a>
+            <a href="./creeper.html">爬行者</a>
+            <a href="./EnderDragon.html">末影龙</a>
+            <a href="./Wither.html">凋零</a>
+            <a href="./index.html">首页</a>
+        </nav>
+    </header>
+    <article>
+        <div id="creeperDes">
+            <img id="img_z" src="../resources/Creeper.webp" style="display:block;">
+            <p>生命值：20</p>
+            <p>攻击力：22.5(简单)/43(普通)/64(困难)</p>
+        </div>
+        <div id="creeperDes2">
+            <p>
+                苦力怕（Creeper）是常见的敌对生物，它们悄无声息地接近玩家，当距离目标3格内就会开始爆炸。由于它们独特的外表和极高的杀伤力以及破坏地形和建筑物的能力，苦力怕已经成为了Minecraft的象征标志之一，无论是在玩家或非玩家中都很著名。
+            </p>
+            <div id="summon">
+                <h2>生成</h2>
+                <p>
+                    苦力怕自然生成在主世界亮度等级等于0的可刷怪方块上。
+                </p>
+            </div>
+            <div id="actions">
+                <h2>行为</h2>
+                <p>
+                    苦力怕会追赶它发现的半径16格（±5%），垂直±4格以内的玩家。在Java版中，当玩家佩戴苦力怕的头时，苦力怕的探测范围减少到正常范围的一半（8格）。
+                </p>
+                <br>
+                <p>
+                    如果玩家有隐身效果且没有穿戴任何盔甲，苦力怕不会靠近玩家。
+                </p><br>
+                <p>
+                    当苦力怕距离玩家3格以内时，苦力怕将会停止移动并发出较大的嘶嘶声，身体膨胀并开始闪烁，1.5秒后就会爆炸。在玩家离开7格的爆炸半径（包括击退苦力怕或杀死苦力怕）时就能停止苦力怕的爆炸。
+                </p><br>
+                <p>
+                    苦力怕会尝试在不受到致命跌落伤害时从高处跳下来袭击玩家。整个掉落过程持续1.5秒（包含掉落的时间），因此在高处跳下来着陆后不久就会发生爆炸。
+                </p><br>
+                <p>
+                    类似于其他生物，苦力怕能够爬上梯子和藤蔓，但不会故意这样做。
+                </p><br>
+                <p>苦力怕可用打火石引爆，但是不能用火焰弹引爆。</p><br>
+
+                <p>当苦力怕与猫或豹猫距离6格或更近，且其未开始爆炸，苦力怕会沿直线逃离直到16格以外才会停止，不论是否会因此进入另一只猫或豹猫的6格范围内。除非玩家离开爆炸半径，否则已经开始爆炸的苦力怕不会逃跑。</p>
+                <br>
+                <p>苦力怕的爆炸威力为3。</p><br>
+                <p>
+                    在Java版中，如果苦力怕带有某种药水效果，其爆炸后会在原地创造一个该效果的药水云。</p><br>
+                <p>
+                    一些会对特定生物发起进攻的生物不会主动攻击苦力怕，包括驯服的狼、铁傀儡和僵尸疣猪兽。但是，雪傀儡[2]、名为“Johnny”的卫道士、凋灵以及有队伍且与该苦力怕不在同一队伍的潜影贝仍会攻击苦力怕；山羊也会随机冲撞攻击苦力怕，但苦力怕不会因此而试图爆炸。其他的任何生物皆不会主动攻击苦力怕。
+                </p><br>
+                <p>
+                    如果苦力怕被其他生物攻击，苦力怕会靠近攻击它的生物并爆炸。
+                </p><br>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <p>本页面所有资料均来自Minecraft Wiki</p>
+    </footer>
+</body>
+<style>
+    header {
+        width: 100%;
+        height: 15%;
+    }
+
+    header h1 {
+        background-color: rgb(4, 172, 4);
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        color: #FFF;
+    }
+
+    header nav a {
+        display: inline-block;
+        padding: 0 20px;
+        height: 60px;
+        line-height: 60px;
+        color: #FFF;
+        font-family: "\5FAE\8F6F\96C5\9ED1";
+        font-size: 16px
+    }
+
+    header nav {
+        width: 100%;
+        height: 60px;
+        background: #065404;
+        margin: 0 auto
+    }
+
+    article {
+        width: 100%;
+        height: 85%;
+        background-color: greenyellow;
+    }
+
+    article #creeperDes {
+        position: relative;
+        top: 5%;
+        left: 42%;
+        /* margin: 1; */
+    }
+
+    footer {
+        margin: 0px;
+        padding: 0px;
+        position: block;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        color: white;
+        text-align: center;
+        background-color: rgb(1, 58, 8);
+    }
+
+    h2 {
+        background-color: rgb(16, 173, 121);
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #creeperDes2 p {
+        background-color: rgb(12, 202, 91);
+        color: azure;
+        margin: 0px;
+        padding: 0px;
+    }
+</style>
+
+</html>

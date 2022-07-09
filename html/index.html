@@ -4,7 +4,7 @@
 <head>
 </head>
 
-<body>
+<body style="background-image: url('../resources/bg2.jpg');" id="body">
     <header>
         <h1>MC 怪物大全</h1>
     </header>
@@ -50,9 +50,11 @@
                     <h3>凋灵</h3>
                 </span>
             </a>
+            <a href="./myPaper.html">
                 <span id="card-Paper">
                     <h3>报告</h3>
                 </span>
+            </a>
             </div>
 
         </div>
@@ -62,6 +64,13 @@
         <p>本页面所有资料均来自Minecraft Wiki</p>
     </footer>
 </body>
+<script>
+    window.setInterval(function () {
+        let a = ["../resources/bg1.webp","../resources/bg2.jpg","../resources/bg3.jpg","../resources/bg4.jpg","../resources/bg5.png","../resources/bg6.jpg","../resources/bg7.jpg","../resources/bg8.jpg","../resources/bg9.png","../resources/bg10.jpeg"]
+        let b = Math.floor(Math.random()*10);
+        document.body.style.backgroundImage = "url("+a[b]+")";
+    }, 10000);
+</script>
 <style>
     body {
         width: 100%;
@@ -86,7 +95,6 @@
     article {
         width: 100%;
         height: 75%;
-        background-image: url('../resources/bg1.jp');
     }
 
     #cardGroups {
@@ -124,7 +132,7 @@
         left: 50%;
         height: 225px;
         width: 20%;
-        background-color: #00a2ca6f;
+        background-color: #00a2caa0;
     }
 
     #cardGroup2 {
@@ -139,7 +147,7 @@
         left: 20%;
         height: 225px;
         width: 20%;
-        background-color: #e0eff377;
+        background-color: #e0eff3a2;
     }
 
     #cardGroup3 {
@@ -179,7 +187,7 @@
         height: 225px;
         width: 20%;
         left: 50%;
-        background-color: #670ad86d;
+        background-color: #670ad8cf;
     }
 
     #card-Paper {
@@ -195,7 +203,7 @@
         height: 225px;
         width: 20%;
         left: 20%;
-        background-color: #00000044;
+        background-color: #00000096;
     }
 
     #pa1 {
